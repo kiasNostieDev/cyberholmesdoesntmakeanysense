@@ -1,0 +1,30 @@
+.uglyheading{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    word-wrap: break-word;
+    width: 200px;
+}
+
+.inputt{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+button{
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 60px;
+    align-self: center;
+}
+
+.base64willshowme{
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 150px;
+    word-wrap: break-word;
+    text-align: center;
+}
