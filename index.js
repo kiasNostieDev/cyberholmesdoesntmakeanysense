@@ -1,12 +1,8 @@
 function checkeyes() {
     let eyes = document.getElementById("eyes").value
-    console.log(eyes)
+    console.log(eyes.toString())
 
-    if (eyes === undefined || eyes === '' || eyes === 'haveanything?') document.getElementById("mouth").innerHTML = 'Nice try again'
-    else  if (eyes.toUpperCase !== 'The one who hides a butcher'.toUpperCase || eyes.toUpperCase !== 'You are between the lines now'.toUpperCase) {
-        document.getElementById("mouth").innerHTML = 'no jargons'
-    }
-    else if (eyes.toUpperCase === 'The one who hides a butcher'.toUpperCase || eyes.toUpperCase === 'You are between the lines now'.toUpperCase) {
-        document.getElementById("mouth").innerHTML = 'ewogIG1haWw6ICdzaGl2YWxpbmdhaXlhMjMyM0BnbWFpbC5jb20nLAogIHBhc3N3b3JkOiAnSXRzIGluIHRoZSBjYXB0aW9ucyBpbmNhc2UgeW91IGhhdmVudCBmaWd1cmVkIGl0IG91dCB5ZXQhJywKICBsaW5rZWRJblByb2ZpbGU6ICdTaXZhIExpbmdhaXlhICh1c2Ugc2l0ZSBzZWFyY2ggaW5zdGVhZCBvZiBnb29nbGUpJwp9'
-    }
+    if (eyes.toString() === 'The one who hides a butcher' || eyes.toString() === 'You are between the lines now') {
+        document.getElementById("mouth").innerHTML = 'ewogIG1haWw6ICdzaGl2YWxpbmdhaXlhMjMyM0BnbWFpbC5jb20nLAogIHBhc3N3b3JkOiAnSXRzIGluIHRoZSBjYXB0aW9ucyBpbmNhc2UgeW91IGhhdmVudCBmaWd1cmVkIGl0IG91dCB5ZXQhJywKICBsaW5rZWRJblByb2ZpbGU6ICdTaXZhIExpbmdhaXlhICh1c2Ugc2l0ZSBzZWFyY2ggaW5zdGVhZCBvZiBnb29nbGUpJywKICBhbHNvIGdvIGZvciB0aGUgb3RoZXIgcHJvZmlsZSBmcm9tIFNpdmFuJ3MgdGFnZ2VkIHBvc3QoaWYgeW91IGhhdmVuJ3QpCiAgc2NyZWVuc2hvdHMgZGlmZmVyIGZyb20gSW5zdGEgRG93bmxvYWRlciBpbWFnZXMhCn0='
+    } else  document.getElementById("mouth").innerHTML = 'Nice try again no jargons'
 }
